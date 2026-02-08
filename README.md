@@ -1,8 +1,8 @@
 ## Tisya Sharma
 
-I work on applied data science projects spanning time-series forecasting, biological data analysis, and model-driven applications. My work includes building and evaluating predictive models, designing data pipelines, and developing full-stack tools to explore, debug, and communicate results.
+I work on applied data science projects spanning time-series forecasting, biological data analysis, and model-driven applications. My work includes building and evaluating predictive models, designing data pipelines, and developing full-stack tools to explore and communicate results.
 
-I’m excited to continue working with real-world, high-dimensional data and to contribute to projects where data science work can support meaningful analysis and decisions!
+I’m excited to continue working with real-world, high-dimensional data and to contribute to projects where data science can support meaningful analysis and decisions!
 
 ---
 
