@@ -34,7 +34,7 @@ Full-stack personal finance application with an ML-assisted receipt categorizati
 - Flask API, React frontend, and MySQL backend
 - Implemented a multi-stage categorization system with confidence-based routing
 - Supports on-demand model retraining from user-corrected labels  
-- **Repo:** https://github.com/tisyasharma/pocket-protectors
+- **Repo:** [https://github.com/tisyasharma/pocket-protectors](https://github.com/tisyasharma/pocket-protector)
 - **Live Demo:** https://pocketprotectors.up.railway.app/ -- Demo login accounts listed in project README.md
 
 ---
