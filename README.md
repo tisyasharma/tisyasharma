@@ -1,16 +1,47 @@
-# Tisya Sharma
+## Tisya Sharma
 
-I am a Data Science student at Northeastern University with a background in **Machine Learning** and **Algorithmic Problem Solving**. I specialize in translating complex, unstructured data into actionable insights through automated pipelines and interactive tools.
+I work on applied data science projects spanning time-series forecasting, biological data analysis, and model-driven applications. My work includes building and evaluating predictive models, designing data pipelines, and developing full-stack tools to explore, debug, and communicate results.
 
-### Experience
-* [cite_start]**Automated Data Systems (Harvard University):** Designed and deployed automated data pipelines that reduced manual processing time by **>90%**, optimizing research workflows[cite: 36, 91].
-* [cite_start]**Teaching Assistant (CS3000 Algorithms):** Mentoring 400+ students in core computer science concepts, including complexity analysis, graph theory, and dynamic programming[cite: 86].
-* [cite_start]**Machine Learning & Visualization (Capstone):** Leading the development of an open-source data platform, integrating unsupervised learning (clustering/PCA) and FAIR data standards for high-dimensional datasets[cite: 131, 133].
+I’m excited to continue working with real-world, high-dimensional data and to contribute to projects where data science work can support meaningful analysis and decisions!
 
-### Technical Skills
-* [cite_start]**Languages:** Python (Pandas, NumPy, Scikit-learn), SQL, R, Java [cite: 74]
-* [cite_start]**Data & Infrastructure:** PostgreSQL, Docker, Git, REST APIs [cite: 75]
-* [cite_start]**Visualization:** D3.js, Altair, Tableau [cite: 70]
-* [cite_start]**Core Competencies:** Statistical Analysis, Model Evaluation, Workflow Automation [cite: 76]
+---
 
-[Connect on LinkedIn](https://www.linkedin.com/in/tisyasharma)
+## Projects
+
+### **Flight Delay Forecasting**
+Route-level time-series forecasting using U.S. flight data (2019–2025) and ERA5 weather reanalysis.
+- Evaluated XGBoost, LightGBM, LSTM, and TCN models using **4-fold walk-forward validation**
+- Best performance achieved by **XGBoost / LightGBM** (**11.25 min MAE, ~77.7% hit rate**)
+- Removing weather features increased error by **10.3%**
+- Built an interactive **React + D3 dashboard** for exploring forecasts, residuals, model comparisons, and performance diagnostics across routes and time  
+- **Repo:** https://github.com/tisyasharma/flight-delay-forecasting
+- **Live Demo:** https://tisyasharma.github.io/flight-delay-forecasting/
+
+---
+
+### **AON Single-Nucleus RNA-Seq Analysis**
+Single-nucleus RNA sequencing analysis of the mouse Anterior Olfactory Nucleus integrating 10x Genomics data with the Allen Brain Cell Atlas.
+- Applied **PCA-based dimensionality reduction and clustering** to analyze high-dimensional gene expression data.
+- Analyzed **36,863 nuclei**, retaining **8,885 high-quality cells across 28 clusters**
+- Identified spatial segregation of excitatory AON neurons into dorsolateral and ventromedial populations
+- Discovered **Abi3bp** as the top marker of contralaterally-projecting neurons using FDR-corrected testing  
+- **Repo:** https://github.com/tisyasharma/AON_snRNAseq_TS
+
+---
+
+### **Pocket Protectors**
+Full-stack personal finance application with an ML-assisted receipt categorization pipeline.
+- Flask API, React frontend, and MySQL backend
+- Implemented a multi-stage categorization system with confidence-based routing
+- Supports on-demand model retraining from user-corrected labels  
+- **Repo:** https://github.com/tisyasharma/pocket-protectors
+- **Live Demo:** https://pocketprotectors.up.railway.app/
+
+---
+
+### **Twitter Storage Comparison**
+Systems comparison of PostgreSQL and Redis for Twitter-style workloads.
+- Benchmarked **~1M tweets** and **~10K follow relationships**
+- PostgreSQL achieved higher write throughput; Redis provided faster timeline reads
+- Explored architectural tradeoffs in fan-out strategies  
+- **Repo:** https://github.com/tisyasharma/twitter-storage-comparison
