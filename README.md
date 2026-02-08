@@ -15,7 +15,7 @@ Route-level time-series forecasting using U.S. flight data (2019–2025) and ERA
 - Removing weather features increased error by **10.3%**
 - Built an interactive **React + D3 dashboard** for exploring forecasts, residuals, model comparisons, and performance diagnostics across routes and time  
 - **Repo:** https://github.com/tisyasharma/flight-delay-forecasting
-- **Live Demo:** https://tisyasharma.github.io/flight-delay-forecasting/ -- Demo login accounts listed in project README.md
+- **Live Demo:** https://tisyasharma.github.io/flight-delay-forecasting/ 
 
 ---
 
@@ -35,7 +35,7 @@ Full-stack personal finance application with an ML-assisted receipt categorizati
 - Implemented a multi-stage categorization system with confidence-based routing
 - Supports on-demand model retraining from user-corrected labels  
 - **Repo:** https://github.com/tisyasharma/pocket-protectors
-- **Live Demo:** https://pocketprotectors.up.railway.app/
+- **Live Demo:** https://pocketprotectors.up.railway.app/ -- Demo login accounts listed in project README.md
 
 ---
 
