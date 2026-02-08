@@ -1,6 +1,6 @@
 ## Tisya Sharma
 
-I work on applied data science projects spanning time-series forecasting, biological data analysis, and model-driven applications. My work includes building and evaluating predictive models, designing data pipelines, and developing full-stack tools to explore and communicate results.
+I'm currently a 4th year Data Science student at Northeastern University (5 year program, graduating 2027). I've worked on applied data science projects spanning time-series forecasting, biological data analysis, and model-driven applications. I really enjoy building and evaluating predictive models, designing data pipelines, and developing full-stack tools to explore and communicate results.
 
 I’m excited to continue working with real-world, high-dimensional data and to contribute to projects where data science can support meaningful analysis and decisions!
 
