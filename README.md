@@ -15,7 +15,7 @@ Route-level time-series forecasting using U.S. flight data (2019–2025) and ERA
 - Removing weather features increased error by **10.3%**
 - Built an interactive **React + D3 dashboard** for exploring forecasts, residuals, model comparisons, and performance diagnostics across routes and time  
 - **Repo:** https://github.com/tisyasharma/flight-delay-forecasting
-- **Live Demo:** https://tisyasharma.github.io/flight-delay-forecasting/
+- **Live Demo:** https://tisyasharma.github.io/flight-delay-forecasting/ -- Demo login accounts listed in project README.md
 
 ---
 
