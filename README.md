@@ -57,7 +57,7 @@ Systems comparison of **PostgreSQL** and **Redis** for Twitter-style workloads.
 
 ### Full-Stack Applications
 
-#### **Pocket Protectors** | [Repo](https://github.com/tisyasharma/pocket-protectors) | [Live Demo](https://pocket-protector.vercel.app/)
+#### **Pocket Protectors** | [Repo](https://github.com/tisyasharma/pocket-protector) | [Live Demo](https://pocket-protector.vercel.app/)
 Full-stack personal finance application with an ML-assisted receipt categorization pipeline.
 
 - **Flask API**, **React frontend**, and **MySQL backend**
