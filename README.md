@@ -1,65 +1,52 @@
 # Tisya Sharma
 
-Hi! I'm currently a 4th year Data Science student at Northeastern University (5 year program, graduating 2027). I've worked on applied data science projects spanning time-series forecasting, biological data analysis, and model-driven applications. I really enjoy building and evaluating predictive models, designing data pipelines, and developing full-stack tools to explore and communicate results.
+I'm a senior Data Science and Biology student at Northeastern University, graduating in December 2026. This summer, I've been working as an AI Engineering Intern at the Institute for Protein Innovation.
 
-I’m excited to continue working with real-world, high-dimensional data and to contribute to projects where data science can support meaningful analysis and decisions!
+I'm especially interested in machine learning, data science, and building reliable systems that turn complex, real-world data into useful insights and tools.
 
----
 
-# Projects
 
----
+## Projects
 
-### Machine Learning & Forecasting 
+### Machine Learning Systems
+
 #### **Flight Delay Forecasting** | [Repo](https://github.com/tisyasharma/flight-delay-forecasting) | [Live Demo](https://tisyasharma.github.io/flight-delay-forecasting/)
 
-Route-level time-series forecasting using U.S. flight data (2019–2025) and ERA5 weather reanalysis (Open-Meteo API).
+Live route-level forecasting system that publishes daily seven-day forecasts of average arrival delay, with calibrated 80% prediction intervals, for the 50 busiest U.S. routes.
 
-- Evaluated XGBoost, LightGBM, LSTM, and TCN using 4-fold walk-forward validation
-- Best performance achieved by XGBoost / LightGBM (**11.25 min MAE, ~77.7% hit rate**)
-- Removing weather features increased error by **10.3%**
-- Built an interactive **React + D3** dashboard for exploring forecasts, residuals, model comparisons, and performance diagnostics 
+- Built a recursive **LightGBM quantile forecasting** pipeline that bridges the five-to-ten-week lag in published flight outcomes by rolling predictions forward with current weather data; validated serving depths through 90 recursive days
+- Across four half-year walk-forward folds, the evaluated q50 model achieved **10.80-minute MAE**, while conformal calibration brought interval coverage to **79.6%** and the bad-delay-day classifier reached **0.61 PR-AUC**
+- Automated daily weather assembly, forecasting, append-only prediction logging, and **React + D3** dashboard publishing with **GitHub Actions**, supported by pytest, MLflow, data-quality and drift gates, and model and dataset cards
 
----
 
-### Computational Biology & Research
+### Statistical Machine Learning
 
-#### **AON Single-Nucleus RNA-Seq Analysis** | [Repo](https://github.com/tisyasharma/AON_snRNAseq_TS)
-Single-nucleus RNA sequencing analysis of the mouse Anterior Olfactory Nucleus integrating 10x Genomics data with the Allen Brain Cell Atlas.
+#### **Volatility Regime Forecasting** | [Repo](https://github.com/tisyasharma/volatility-regime-forecasting)
 
-- Applied PCA-based dimensionality reduction and clustering to analyze high-dimensional gene expression data
-- Analyzed **36,863 nuclei**, retaining **8,885 high-quality cells across 28 clusters**
-- Identified spatial segregation of excitatory neurons into dorsolateral and ventromedial populations
-- Discovered Abi3bp as the top marker of contralaterally-projecting neurons using FDR-corrected testing  
+Leakage-aware time-series machine learning study forecasting whether 14 U.S. equities will enter a high-volatility regime over the following 10 trading days.
 
----
+- Evaluated logistic regression, LightGBM, XGBoost, a HAR volatility benchmark, and matched naive baselines over **37,002 equity-day observations** using 28 expanding-window validation folds
+- Identified nine days of feature-label overlap in an initial target, then redesigned the task using a forward-disjoint label, past-only thresholds, horizon-exact purging, and training-fold-only scaling
+- Logistic regression achieved **0.368 average precision** versus **0.334** for the matched naive baseline, an exact **0.0335 lift** that remained significant after dependence-aware resampling and multiple-comparison correction
 
-### Data Engineering & Systems
 
-#### **OpenFDA Adverse Events Data Pipeline** | [Repo](https://github.com/tisyasharma/openfda-data-pipeline)
-Document-store modeling and aggregation pipeline design using large-scale biomedical event data from the OpenFDA API.
+### Computational Biology
 
-- Ingested **5,000 nested FDA adverse event reports** with hierarchical patient, drug, and reaction arrays
-- Modeled pharmacovigilance data in **MongoDB**
-- Computed death rates by administration route and demographic breakdowns using aggregation pipelines
-- Implemented a **PyMongo** query interface returning JSON-serializable outputs  
+#### **Mouse AON Transcriptomics** | [Repo](https://github.com/tisyasharma/mouse-aon-transcriptomics)
 
----
+Reproducible single-nucleus RNA-seq and spatial transcriptomics workflow integrating an in-house 10x Genomics AON library with Allen Brain Cell Atlas references to characterize cell populations and evaluate a predefined dorsolateral glutamatergic marker signature.
 
-#### **Twitter Storage Comparison** | [Repo](https://github.com/tisyasharma/twitter-storage-comparison)
-Systems comparison of **PostgreSQL** and **Redis** for Twitter-style workloads.
+- Processed **32,952 QC-filtered nuclei** into 22 Leiden clusters, including eight excitatory clusters, thirteen inhibitory clusters, and one cluster retained as unassigned
+- Integrated Allen Brain Cell Atlas 10x and MERFISH references and performed paired donor-level pseudobulk differential expression across ten donors, identifying **1,347 genes** meeting FDR and effect-size thresholds
+- Built the analysis with **Scanpy, DESeq2, Snakemake, Docker, and GitHub Actions**, with independent reference-concordance checks, an optional scANVI label-transfer analysis, curated figures, and machine-readable results
 
-- Benchmarked approximately **~1M tweets** and **~10K follow relationships**
-- PostgreSQL achieved higher write throughput; Redis provided faster timeline reads
-- Explored architectural tradeoffs in fan-out strategies  
-
----
 
 ### Full-Stack Applications
 
 #### **Pocket Protectors** | [Repo](https://github.com/tisyasharma/pocket-protector) | [Live Demo](https://pocket-protector.vercel.app/)
-Full-stack personal finance application with an ML-assisted receipt categorization pipeline.
 
-- **Flask API**, **React frontend**, and **MySQL backend**
-- Implemented a multi-stage categorization system with confidence-based routing
-- Supports on-demand model retraining from user-corrected labels  
+Team-built personal finance application for tracking receipts, budgets, spending patterns, and financial goals.
+
+- Co-developed a deployed architecture using a **React** frontend, **Flask** API, and **MySQL-compatible TiDB Cloud** database, with Docker Compose for local development
+- Implemented a tiered receipt-categorization flow combining merchant rules, keyword matching, and a character n-gram **TF-IDF + logistic regression** classifier for stores not covered by deterministic rules
+- Added confidence-gated predictions, categorization provenance, low-confidence fallback behavior, and API-based model retraining from categorized receipt data
