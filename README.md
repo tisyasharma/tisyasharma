@@ -4,7 +4,9 @@ I'm a senior Data Science and Biology student at Northeastern University, gradua
 
 I'm especially interested in machine learning, data science, and building reliable systems that turn complex, real-world data into useful insights and tools.
 
+### A Little More About Me
 
+Music and food are two of my favorite things. I love going to concerts, discovering new music, and making or trying new food with my friends. I’m also always looking forward to the next opportunity to travel and explore somewhere new!
 
 ## Projects
 
