@@ -1,6 +1,6 @@
 # Tisya Sharma
 
-I'm a senior Data Science and Biology student at Northeastern University, graduating in December 2026. This summer, I've been working as an AI Engineer Intern at the Institute for Protein Innovation.
+I'm a senior Data Science and Biology student at Northeastern University, graduating in December 2026. This summer, I've been a Software Engineering Intern primarily working with AI and Data at the Institute for Protein Innovation.
 
 I'm especially interested in machine learning, data science, and building reliable systems that turn complex, real-world data into useful insights and tools.
 
